@@ -8,21 +8,23 @@
  */
 int main(void)
 {
-int n;
-n = 0;
-while (n < 10)
+char character = '0';
+
+while (character <= '9' || (character >= 'a' && character <= 'f'))
 {
-putchar('0' + n);
-n++;
-}
-char letter;
-letter = 'a';
-while (letter <= 'f')
+putchar(character);
+if (character == '9')
 {
-putchar(letter);
-letter++;
+character = 'a';
 }
+else
+{
+character++;
+}
+}
+
 putchar('\n');
+
 return (0);
 }
 
