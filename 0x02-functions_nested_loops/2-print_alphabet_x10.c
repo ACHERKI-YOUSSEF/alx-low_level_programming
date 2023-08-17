@@ -4,7 +4,7 @@
  * print_alphabet - print all alphabet in lowercase 10 times
  */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 int letter ,  i;
 for (i = 0; i < 10; i++)
