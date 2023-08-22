@@ -27,7 +27,7 @@ int _atoi(char *s)
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			digit = s[i] - '0';
+			dgt = s[i] - '0';
 			if (a % 2)
 				dgt = -dgt;
 			n = n * 10 + dgt;
