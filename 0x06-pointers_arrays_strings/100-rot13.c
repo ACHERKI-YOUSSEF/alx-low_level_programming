@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * rot13 - encoder rotation by 13
+ * rot13 - encoder rotation by13
  * @s: pointer to string params
  *
  * Return: *s
