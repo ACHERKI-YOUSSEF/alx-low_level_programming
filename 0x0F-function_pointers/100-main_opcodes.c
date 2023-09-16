@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int byt, k;
+	int bytes, i;
 	char *arr;
 
 	if (argc != 2)
@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	byt = atoi(argv[1]);
+	bytes = atoi(argv[1]);
 
-	if (byt < 0)
+	if (bytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
@@ -29,14 +29,14 @@ int main(int argc, char *argv[])
 
 	arr = (char *)main;
 
-	for (k = 0; k < byt; k++)
+	for (i = 0; i < bytes; i++)
 	{
-		if (i == byt - 1)
+		if (i == bytes - 1)
 		{
-			printf("%02hhx\n", arr[k]);
+			printf("%02hhx\n", arr[i]);
 			break;
 		}
-		printf("%02hhx ", arr[k]);
+		printf("%02hhx ", arr[i]);
 	}
 	return (0);
 }
