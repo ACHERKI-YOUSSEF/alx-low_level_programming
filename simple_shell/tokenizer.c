@@ -30,3 +30,15 @@ char **tokenizer(char *line)
         return (NULL);
     }
 
+    token = strtok(line, DELIM);
+    while (token)
+    {
+        command[i] = _strdup(token);
+        token = strtok(NULL, DELIM);
+        i++;
+    }
+    free(line), line = NULL;
+    command[i] = NULL;
+    return (command);
+}
+
